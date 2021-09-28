@@ -10,6 +10,8 @@ import com.kienneik.DTO.NewsDTO;
 
 @RestController
 public class NewsAPI {
+	
+	
 	@PostMapping(value = "/news")
 	public NewsDTO createNews(@RequestBody NewsDTO model) {
 		return model;
