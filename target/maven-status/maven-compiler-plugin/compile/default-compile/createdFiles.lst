@@ -1,7 +1,7 @@
-com\kienneik\DTO\NewsDTO.class
 com\kienneik\api\NewsAPI.class
-com\kienneik\entity\UserEntity.class
-com\kienneik\entity\RoleEntity.class
 com\kienneik\entity\CategoryEntity.class
 com\kienneik\api\Application.class
+com\kienneik\DTO\NewsDTO.class
+com\kienneik\entity\UserEntity.class
+com\kienneik\entity\RoleEntity.class
 com\kienneik\entity\NewsEntity.class
