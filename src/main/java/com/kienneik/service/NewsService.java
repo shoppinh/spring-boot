@@ -10,6 +10,9 @@ import com.kienneik.entity.NewsEntity;
 import com.kienneik.repository.CategoryRepository;
 import com.kienneik.repository.NewsRepository;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class NewsService implements INewsService {
 
@@ -35,6 +38,15 @@ public class NewsService implements INewsService {
 
 		}
 		return converter.ToDTO(newsRepository.save(newNews));
+	}
+
+	@Override
+	public List<NewsDTO> getAll() {
+		List<NewsDTO> resultList = new ArrayList<>();
+		for (NewsEntity item : newsRepository.findAll()) {
+			resultList.add(converter.ToDTO(item));
+		}
+		return resultList;
 	}
 
 }

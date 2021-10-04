@@ -5,13 +5,21 @@ import org.springframework.web.bind.annotation.*;
 
 import com.kienneik.DTO.NewsDTO;
 import com.kienneik.service.INewsService;
+
+import java.util.List;
+
 @CrossOrigin
 @RestController
 public class NewsAPI {
 	
 	@Autowired
 	private INewsService newsService;
-	
+
+	@GetMapping(value = "/news")
+	public List<NewsDTO> getAll() {
+		return newsService.getAll();
+	}
+
 	@PostMapping(value = "/news")
 	public NewsDTO createNews(@RequestBody NewsDTO model) {
 		return  newsService.save(model);

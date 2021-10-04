@@ -2,6 +2,7 @@ D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\repository\NewsReposi
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\service\NewsService.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\api\Application.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\service\INewsService.java
+D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\DTO\ParentDTO.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\entity\BaseEntity.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\converter\NewsConverter.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\entity\CategoryEntity.java
@@ -10,4 +11,5 @@ D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\DTO\NewsDTO.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\entity\RoleEntity.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\api\NewsAPI.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\repository\CategoryRepository.java
+D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\DTO\AbstractDTO.java
 D:\Coding\workspace\spring-boot\src\main\java\com\kienneik\entity\NewsEntity.java

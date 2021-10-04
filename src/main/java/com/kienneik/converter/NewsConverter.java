@@ -18,10 +18,17 @@ public class NewsConverter {
 	
 	public NewsDTO ToDTO(NewsEntity entity) {
 		NewsDTO dto = new NewsDTO();
+		if (entity.getId() != null) {
+			dto.setId(entity.getId());
+		}
 		dto.setContent(entity.getContent());
 		dto.setShortDescription(entity.getShortDescription());
 		dto.setTitle(entity.getTitle());
 		dto.setThumbnail(entity.getThumbnail());
+		dto.setCreatedBy(entity.getCreatedBy());
+		dto.setCreatedDate(entity.getCreatedDate());
+		dto.setModifiedBy(entity.getModifiedBy());
+		dto.setModifiedDate(entity.getModifiedDate());
 		return dto;
 	}
 	public NewsEntity toEntity(NewsEntity newsEntity, NewsDTO newsDTO) {
