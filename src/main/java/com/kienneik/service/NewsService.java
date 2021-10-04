@@ -9,11 +9,12 @@ import com.kienneik.entity.CategoryEntity;
 import com.kienneik.entity.NewsEntity;
 import com.kienneik.repository.CategoryRepository;
 import com.kienneik.repository.NewsRepository;
+
 @Service
 public class NewsService implements INewsService {
 
 	@Autowired
-	private NewsRepository newsRepositoy;
+	private NewsRepository newsRepository;
 
 	@Autowired
 	private CategoryRepository categoryRepository;
@@ -21,10 +22,19 @@ public class NewsService implements INewsService {
 	private NewsConverter converter;
 
 	@Override
-	public NewsDTO add(NewsDTO newsDTO) {
+	public NewsDTO save(NewsDTO newsDTO) {
 		CategoryEntity categoryEntity = categoryRepository.findOneByCode(newsDTO.getCategoryCode());
-		NewsEntity newsEntity = converter.ToEntity(newsDTO);
-		newsEntity.setCategory(categoryEntity);
-		return converter.ToDTO(newsRepositoy.save(newsEntity));
+		NewsEntity newNews = new NewsEntity();
+		if (newsDTO.getId() != null) {
+			NewsEntity oldNews = newsRepository.findOne(newsDTO.getId());
+			newNews = converter.toEntity(oldNews, newsDTO);
+			newNews.setCategory(categoryEntity);
+		} else {
+			newNews = converter.ToEntity(newsDTO);
+			newNews.setCategory(categoryEntity);
+
+		}
+		return converter.ToDTO(newsRepository.save(newNews));
 	}
+
 }

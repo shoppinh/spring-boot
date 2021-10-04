@@ -1,3 +1,4 @@
+com\kienneik\DTO\AbstractDTO.class
 com\kienneik\api\NewsAPI.class
 com\kienneik\entity\CategoryEntity.class
 com\kienneik\api\Application.class

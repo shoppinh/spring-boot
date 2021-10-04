@@ -24,4 +24,11 @@ public class NewsConverter {
 		dto.setThumbnail(entity.getThumbnail());
 		return dto;
 	}
+	public NewsEntity toEntity(NewsEntity newsEntity, NewsDTO newsDTO) {
+		newsEntity.setContent(newsDTO.getContent());
+		newsEntity.setTitle(newsDTO.getTitle());
+		newsEntity.setThumbnail(newsDTO.getThumbnail());
+		newsEntity.setShortDescription(newsDTO.getShortDescription());
+		return newsEntity;
+	}
 }
