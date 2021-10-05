@@ -1,6 +1,11 @@
 package com.kienneik.service;
 
 import com.kienneik.DTO.NewsDTO;
+
+import java.util.List;
+
 public interface INewsService {
-	NewsDTO add(NewsDTO newsDTO);
+	NewsDTO save(NewsDTO newsDTO);
+	List<NewsDTO> getAll();
+	
 }

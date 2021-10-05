@@ -1,14 +1,19 @@
 package com.kienneik.entity;
 
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
+
 //Auto create common column for sub table
 @MappedSuperclass
+// Auto create date
+@EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity {
 	// not null and primary key
 	@Id
@@ -19,15 +24,19 @@ public abstract class BaseEntity {
 	//Must have column annotation to define a column
 	
 	@Column
+	@CreatedDate
 	private Date createdDate;
 	
 	@Column
+	@LastModifiedDate
 	private Date modifiedDate;
 	
 	@Column
+	@CreatedBy
 	private String createdBy;
 	
 	@Column
+	@LastModifiedBy
 	private String modifiedBy;
 
 	public Long getId() {

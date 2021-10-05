@@ -5,14 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="503f9cc6-501d-4e3b-aa4b-4d9f862e921e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/DTO/AbstractDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/DTO/ParentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/config/JpaAuditingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/kienneik/DTO/AbstractDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/kienneik/DTO/ParentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kienneik/DTO/NewsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/DTO/NewsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kienneik/api/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/api/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kienneik/api/NewsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/api/NewsAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kienneik/converter/NewsConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/converter/NewsConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kienneik/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kienneik/service/INewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/service/INewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kienneik/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kienneik/service/NewsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.kienneik/spring-boot/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com.kienneik/spring-boot/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kienneik/DTO/NewsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kienneik/DTO/NewsDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kienneik/api/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kienneik/api/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kienneik/api/NewsAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kienneik/api/NewsAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kienneik/converter/NewsConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kienneik/converter/NewsConverter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kienneik/service/INewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kienneik/service/INewsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kienneik/service/NewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kienneik/service/NewsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -6,11 +6,12 @@ import org.springframework.boot.SpringApplication;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan("com.kienneik.entity")
 //Scan for entity must have
-@SpringBootApplication
+@SpringBootApplication(exclude ={SecurityAutoConfiguration.class})
 @ComponentScan({"com.kienneik"})
 @EnableJpaRepositories("com.kienneik.repository")
 public class Application {

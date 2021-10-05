@@ -1,6 +1,6 @@
 package com.kienneik.DTO;
 
-public class NewsDTO {
+public class NewsDTO extends ParentDTO<NewsDTO>{
 	private String title;
 	private String content;
 	private String thumbnail;
